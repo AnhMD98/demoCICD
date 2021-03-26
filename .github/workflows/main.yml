@@ -13,12 +13,11 @@ jobs:
           cd /home/sysadmin
           pwd
           ls -la
-          git clone https://github.com/AnhMD98/TestCIPython
+          git clone https://github.com/AnhMD98/demoCICD.git
           ping -c 5 8.8.8.8
           pwd
           docker ps -a
           docker ps -a -q
           docker images
           docker container ls
-          cd /home/test/Desktop/wp
-          ls -la
+          docker --version
