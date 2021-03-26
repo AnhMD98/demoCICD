@@ -1,0 +1,24 @@
+
+name: demo
+on:
+  push:
+    branches: [ master ]
+jobs:
+      
+  build_docker:
+    runs-on: self-hosted
+    steps:
+      - name: demo
+        run: |
+          cd /home/sysadmin
+          pwd
+          ls -la
+          git clone https://github.com/AnhMD98/TestCIPython
+          ping -c 5 8.8.8.8
+          pwd
+          docker ps -a
+          docker ps -a -q
+          docker images
+          docker container ls
+          cd /home/test/Desktop/wp
+          ls -la
